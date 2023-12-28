@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование покупателя</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .balance-field {
+            position: relative;
+            display: inline-block;
+            background-color: #f8f9fa;
+            padding: 8px 12px;
+            border-radius: 20px;
+        }
+
+        .balance-field input {
+            left: 20px;
+            border: none;
+            background-color: transparent;
+            width: 100%;
+        }
+
+        .balance-icon {
+            position: absolute;
+            top: 50%;
+            left: 8px;
+            transform: translateY(-50%);
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Редактирование покупателя</h2>
+
+        <div class="form-group">
+            <label for="fullName">ФИО:</label>
+            <input type="text" class="form-control" id="fullName">
+        </div>
+
+        <div class="form-group">
+            <label for="balance">Баланс:</label>
+            <div class="balance-field">
+                <span class="balance-icon">$</span>
+                <input type="text" class="form-control" id="balance">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Адрес доставки:</label>
+            <input type="text" class="form-control" id="address">
+        </div>
+
+        <h3>Лоты, в которых участвует покупатель:</h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Ставка</th>
+                    <th scope="col">Сумма</th>
+                    <th scope="col">Покупки</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Здесь будет генерация строк таблицы с лотами -->
+            </tbody>
+        </table>
+
+        <button class="btn btn-primary">Сохранить покупателя</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

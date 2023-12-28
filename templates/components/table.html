@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+        <tr>
+            {% for column in columns %}
+            <th scope="col">{{column}}</th>
+<!--            <th scope="col">Название</th>-->
+<!--            <th scope="col">Продавец</th>-->
+<!--            <th scope="col">Минимальная ставка</th>-->
+<!--            <th scope="col">Шаг ставки</th>-->
+<!--            <th scope="col">Описание</th>-->
+<!--            <th scope="col">Изменить</th>-->
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in rows %}
+            {% for column in columns %}
+                <tr>Row</tr>
+            {% endfor %}
+        {% endfor %}
+    </tbody>
+</table>
